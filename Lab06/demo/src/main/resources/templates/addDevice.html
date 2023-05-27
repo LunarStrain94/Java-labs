@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a th:href="@{/api/client/all}">All clients </a>
+<a th:href="@{/api/device/all/1}">All devices </a>
+<a th:href="@{/api/history/all}">All measurements </a>
+<br>
+<a th:href="@{/api/client/add}">Add client </a>
+<a th:href="@{/api/device/add}">Add device </a>
+<a th:href="@{/api/history/add}">Add measurement </a>
+<form action="#" th:action="@{/api/device/add}" th:object="${device}" method="post">
+    <p>Name: <input type="text" th:field="*{name}" /></p>
+    <p>Client ID: <input type="text" th:field="*{clientId}" /></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Clients</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<a th:href="@{/api/client/all}">All clients </a>
+<a th:href="@{/api/device/all/1}">All devices </a>
+<a th:href="@{/api/history/all}">All measurements </a>
+<br>
+<a th:href="@{/api/client/add}">Add client </a>
+<a th:href="@{/api/device/add}">Add device </a>
+<a th:href="@{/api/history/add}">Add measurement </a>
+<table>
+    <tr th:each="client: ${clients}">
+        <td th:text="${client.id}" />
+        <td th:text="${client.name}" />
+        <td th:text="${client.address.street}" />
+        <td th:text="${client.address.city}" />
+        <td th:text="${client.address.zipCode}" />
+        <td th:text="${client?.device?.deviceName}" />
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<a th:href="@{/api/client/all}">All clients </a>
+<a th:href="@{/api/device/all/1}">All devices </a>
+<a th:href="@{/api/history/all}">All measurements </a>
+<br>
+<a th:href="@{/api/client/add}">Add client </a>
+<a th:href="@{/api/device/add}">Add device </a>
+<a th:href="@{/api/history/add}">Add measurement </a>
+<body>
+<p th:text="'Month ' + ${history.month}" />
+<p th:text="'Year: ' + ${history.year}" />
+<p th:text="'Average consumption: ' + ${history.avgCons}" />
+<p th:text="'Full consumption: ' + ${history.fullCons}" />
+<p th:text="'Device ID: ' + ${history.deviceId}" />
+<a href="/api/history/add">Submit another message</a>
+</body>
+</html>

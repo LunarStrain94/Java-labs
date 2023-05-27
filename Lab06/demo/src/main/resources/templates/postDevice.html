@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<a th:href="@{/api/client/all}">All clients </a>
+<a th:href="@{/api/device/all/1}">All devices </a>
+<a th:href="@{/api/history/all}">All measurements </a>
+<br>
+<a th:href="@{/api/client/add}">Add client </a>
+<a th:href="@{/api/device/add}">Add device </a>
+<a th:href="@{/api/history/add}">Add measurement </a>
+<body>
+    <p th:text="'Name: ' + ${device.name}" />
+    <p th:text="'Client ID: ' + ${device.clientId}" />
+    <a href="/api/device/add">Submit another message</a>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{"meter": [{"sensorName":"CurrentWaterTemperature","measurementUnit":"Celsius","value":-29446,"upperLimit":32668,"lowerLimit":-32668,"factor":10},
+  {"sensorName":"CurrentWaterPressure","measurementUnit":"Bar","value":11207,"upperLimit":65336,"lowerLimit":0,"factor":1000},
+  {"sensorName":"WaterConsumptionRecent","measurementUnit":"Litre","value":44846,"upperLimit":65336,"lowerLimit":0,"factor":0},
+  {"sensorName":"WaterConsumption","measurementUnit":"CubicMetre","value":34613,"upperLimit":65336,"lowerLimit":0,"factor":10}],
+  "broker":"mosquitto"
+}
