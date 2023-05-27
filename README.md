@@ -1,2 +1,2 @@
 # Java-labs
-Laboratorijske vježbe iz kolegija programiranje u Javi
+Laboratorijske vježbe iz kolegija Programiranje u Javi
